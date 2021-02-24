@@ -1,0 +1,13 @@
+
+
+style components
+npm install --save styled-components
+
+Plugin typography
+npm install gatsby-plugin-typography react-typography typography
+
+stripe plugins
+npm i gatsby-source-stripe gatsby-plugin-stripe
+
+config entorn var
+npm i dotenv
