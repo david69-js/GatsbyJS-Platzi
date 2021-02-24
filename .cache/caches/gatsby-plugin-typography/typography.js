@@ -1,0 +1,1 @@
+module.exports = require("C:\\Users\\David\\Desktop\\react\\Gatsby-platzi\\src\\utils\\typography.js")
