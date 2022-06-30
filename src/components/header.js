@@ -8,7 +8,7 @@ const Header = () => {
   const {cart} = useContext(CartContext);
     return (
     <StyledHeader margin>
-    <Link to="to">
+    <Link to="/">
       <img src="https://i.postimg.cc/6q3pg48v/Logo.png" alt="plaziswag" />
     </Link>
     <nav>

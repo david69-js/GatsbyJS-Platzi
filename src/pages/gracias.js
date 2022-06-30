@@ -11,7 +11,7 @@ export default function gracias() {
                 <p>No pares de aprender</p>
                 <span role="img" aria-label="emoji">💖</span>
                 <Link to="/">
-                    <Button>volver al 2019</Button>
+                    <Button>volver a home</Button>
                 </Link>
             </Purchase> 
         </div>

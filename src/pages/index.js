@@ -16,18 +16,18 @@ export const query = graphql`
         }
       }
     }
-    allStripePrice{
-      edges{
-        node{
+    allStripeSku: allStripePrice {
+      edges {
+        node {
           id
-          unit_amount
-          product{
+          price: unit_amount
+          product {
             name
-            metadata{
-              img
+            metadata {
               description
+              img
               wear
-            }      
+            }
           }
         }
       }
@@ -35,18 +35,6 @@ export const query = graphql`
   }
   
 `
-const Button = styled.button`
-  background: ${props => props.bg};
-  font-size:${props => props.ft};
-  padding:30px;
-  height:auto;
-  width:auto;
-  color:white;
-  &:hover{
-    transform: scale(1.3);
-    background: black;
-  }
-`;
 const IndexPage = ({data}) =>{
   console.log(data)
   return(
@@ -54,8 +42,7 @@ const IndexPage = ({data}) =>{
       <Jumbo data={data.allSite.edges[0].node.siteMetadata} />
       <SEO title="Home" />
 
-      <Product products={ data.allStripePrice.edges} />
-      <Button bg="gray" ft="50px">Comprar</Button>
+      <Product products={ data.allStripeSku.edges} />
     </div>
   )
 } 
@@ -63,7 +50,8 @@ const IndexPage = ({data}) =>{
 
 
 export default IndexPage
-/* Esto debajo de seo      
+/* Esto debajo de seo     
+<Button bg="gray" ft="50px">Comprar</Button> 
     <h1>Hi people</h1>
       <p>Welcome to your new Gatsby site.</p>
       <p>Now go build something great.</p>

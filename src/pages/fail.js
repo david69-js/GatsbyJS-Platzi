@@ -12,7 +12,7 @@ export default function fail() {
            <p>Espero que esto no se haya sido una molestia, pase buen dia</p>
            <span role="img" aria-label="emogi">😔</span> 
            <Link to="/">
-                <CustmoButton>Ver a Kase.O</CustmoButton>
+                <CustmoButton>Volver al home</CustmoButton>
            </Link>
         </CustomPurchase>
 
